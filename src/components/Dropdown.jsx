@@ -9,8 +9,8 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       id: 'marketing',
       title: "Marketing",
       items: [
-        { name: "Best CRM Software", link: "/BestCRMSoftware" },
-        { name: "Best Email Marketing Services", link: "/EmailMarketing" },
+        { name: "Best CRM Software", link: "/Marketing/Best-crm-software" },
+        { name: "Best Email Marketing Services", link: "/Marketing/Best-email-marketing-services" },
         { name: "Best Website Building Platforms", link: "/BestWebsiteBuildingPlatform" }
       ]
     },
