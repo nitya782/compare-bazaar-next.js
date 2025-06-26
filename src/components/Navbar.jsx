@@ -282,8 +282,8 @@ const Navbar = () => {
                 <div className="mobile-dropdown-content">
                   <div className="mobile-dropdown-category">
                     <ul className="category-items">
-                      <li><a href="/BestCRMSoftware" className="category-item-link">Best CRM Software</a></li>
-                      <li><a href="/EmailMarketing" className="category-item-link">Best Email Marketing Services</a></li>
+                      <li><a href="/Marketing/Best-crm-software" className="category-item-link">Best CRM Software</a></li>
+                      <li><a href="/Marketing/Best-email-marketing-services" className="category-item-link">Best Email Marketing Services</a></li>
                       <li><a href="/BestWebsiteBuildingPlatform" className="category-item-link">Best Website Building Platform</a></li>
                     </ul>
                   </div>
@@ -335,7 +335,7 @@ const Navbar = () => {
                 <div className="mobile-dropdown-content">
                   <div className="mobile-dropdown-category">
                     <ul className="category-items">
-                      <li><a href="/BestCRMSoftware" className="category-item-link">Best CRM Software</a></li>
+                      <li><a href="/Marketing/Best-crm-software" className="category-item-link">Best CRM Software</a></li>
                       <li><a href="/Callcenter" className="category-item-link">Best Call Center Management Software</a></li>
                       <li><a href="/BestProjectManagement" className="category-item-link">Best Project Management Software</a></li>
                     </ul>

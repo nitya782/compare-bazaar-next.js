@@ -55,57 +55,81 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
 
   return (
     <>
-      {!isMobile && activeDropdown && (
-        <div className="mega-dropdown" onMouseLeave={() => setActiveDropdown(null)}>
-          <div className="mega-dropdown-inner">
-            <div className="mega-dropdown-sections">
-              {allSectionsContent.map((section) => (
-                <div 
-                  key={section.id} 
-                  className={`mega-dropdown-section ${
-                    activeNavItem === section.id ? 'active-section-group' : ''
-                  }`}
-                >
-                  <h3 className={`mega-dropdown-title ${
-                    activeNavItem === section.id ? 'active-section' : ''
-                  }`}>
-                    {section.title}
-                  </h3>
-                  <ul className="mega-dropdown-items">
-                    {section.items.map((item) => (
-                      <li key={item.link}>
-                        {item.link.startsWith('http') ? (
-                          <a 
-                            href={item.link}
-                            className={`mega-dropdown-item ${
-                              activeNavItem === section.id ? 'active-item' : ''
-                            }`}
-                            onClick={() => setActiveDropdown(null)}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {item.name}
-                          </a>
-                        ) : (
-                          <Link 
-                            href={item.link} 
-                            className={`mega-dropdown-item ${
-                              activeNavItem === section.id ? 'active-item' : ''
-                            }`}
-                            onClick={() => setActiveDropdown(null)}
-                          >
-                            {item.name}
-                          </Link>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+    {/* Desktop dropdown */}
+    {!isMobile && activeDropdown && (
+      <div className="mega-dropdown" onMouseLeave={() => setActiveDropdown(null)}>
+        <div className="mega-dropdown-inner">
+          <div className="mega-dropdown-sections">
+            {allSectionsContent.map((section) => (
+              <div 
+                key={section.id}
+                className={`mega-dropdown-section ${activeNavItem === section.id ? 'active-section-group' : ''}`}
+              >
+                <h3 className={`mega-dropdown-title ${activeNavItem === section.id ? 'active-section' : ''}`}>
+                  {section.title}
+                </h3>
+                <ul className="mega-dropdown-items">
+                  {section.items.map((item) => (
+                    <li key={item.link}>
+                      {item.link.startsWith('http') ? (
+                        <a 
+                          href={item.link}
+                          className="mega-dropdown-item"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <Link
+                          href={item.link}
+                          className="mega-dropdown-item"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {item.name}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
-      )}
+      </div>
+    )}
+
+    {/* Mobile dropdown */}
+    {isMobile && activeDropdown && (
+      <div className="mobile-dropdown">
+        {allSectionsContent
+          .find((section) => section.id === activeDropdown)
+          ?.items.map((item) => (
+            <div key={item.link} className="mobile-dropdown-item px-4 py-2 border-b">
+              {item.link.startsWith('http') ? (
+                <a
+                  href={item.link}
+                  className="text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  href={item.link}
+                  className="text-blue-600"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          ))}
+      </div>
+    )}
     </>
   );
 };
