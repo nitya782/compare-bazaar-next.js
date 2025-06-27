@@ -11,7 +11,7 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       items: [
         { name: "Best CRM Software", link: "/Marketing/Best-crm-software" },
         { name: "Best Email Marketing Services", link: "/Marketing/Best-email-marketing-services" },
-        { name: "Best Website Building Platforms", link: "/BestWebsiteBuildingPlatform" }
+        { name: "Best Website Building Platforms", link: "Marketing/Best-website-building-platform" }
       ]
     },
     {
@@ -29,9 +29,9 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       id: 'sales',
       title: "Sales",
       items: [
-        { name: "Best CRM Software", link: "/BestCRMSoftware" },
-        { name: "Best Call Center Management Software", link: "/Callcenter" },
-        { name: "Best Project Management Software", link: "/BestProjectManagement" }
+        { name: "Best CRM Software", link: "/Sales/Best-crm-software" },
+        { name: "Best Call Center Management Software", link: "/Sales/Best-call-center-management-software" },
+        { name: "Best Project Management Software", link: "/Sales/Best-project-management-software" }
       ]
     },
     {
