@@ -361,11 +361,11 @@ const Navbar = () => {
                 <div className="mobile-dropdown-content">
                   <div className="mobile-dropdown-category">
                     <ul className="category-items">
-                      <li><a href="/WhitePaper" className="category-item-link">WhitePaper</a></li>
+                      <li><a href="/Resources/Whitepaper" className="category-item-link">WhitePaper</a></li>
                       <li><a href="https://blogs.compare-bazaar.com/" className="category-item-link">Blogs</a></li>
                     </ul>
                   </div>
-                </div>   
+                </div>
               )}
             </div>
 

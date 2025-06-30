@@ -38,8 +38,8 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       id: 'blog',
       title: "Resources",
       items: [
-        { name: "WhitePaper", link: "/WhitePaper" },
-        { name: "Blogs", link: "https://blogs.compare-bazaar.com/" }
+        { name: "WhitePaper", link: "/Resources/Whitepaper" },
+        { name: "Blogs", link: "/Resources/Blogs" }
       ]
     },
     {
@@ -108,15 +108,15 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
           ?.items.map((item) => (
             <div key={item.link} className="mobile-dropdown-item px-4 py-2 border-b">
               {item.link.startsWith('http') ? (
-                <a
-                  href={item.link}
-                  className="text-blue-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setActiveDropdown(null)}
-                >
-                  {item.name}
-                </a>
+              <a 
+                href={item.link}
+                className="mega-dropdown-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setActiveDropdown(null)}
+              >
+                {item.name}
+              </a>
               ) : (
                 <Link
                   href={item.link}
