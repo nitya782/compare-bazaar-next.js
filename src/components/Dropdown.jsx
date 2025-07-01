@@ -46,9 +46,9 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       id: 'contact',
       title: "Contact Us",
       items: [
-        { name: "Contact", link: "/contact-sales" },
-        { name: "About us", link: "/About us" },
-        { name: "Careers", link: "/Careers" }
+        { name: "Contact", link: "/Contact-us/Contact" },
+        { name: "About us", link: "/Contact-us/About-us" },
+        { name: "Careers", link: "/Contact-us/Careers" }
       ]
     }
   ];

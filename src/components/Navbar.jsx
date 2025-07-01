@@ -386,9 +386,9 @@ const Navbar = () => {
                 <div className="mobile-dropdown-content">
                   <div className="mobile-dropdown-category">
                     <ul className="category-items">
-                      <li><a href="/contact-sales" className="category-item-link">Contact</a></li>
-                      <li><a href="/About us" className="category-item-link">About</a></li>
-                      <li><a href="/Careers" className="category-item-link">Career</a></li>
+                      <li><a href="/Contact-us/Contact" className="category-item-link">Contact</a></li>
+                      <li><a href="/Contact-us/About-us" className="category-item-link">About</a></li>
+                      <li><a href="/Contact-us/Careers" className="category-item-link">Career</a></li>
                     </ul>
                   </div>
                 </div>

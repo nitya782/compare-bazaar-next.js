@@ -46,7 +46,7 @@ const WideDiv = () => {
             <ul className="list-none p-0">
               <li className="mb-2 text-sm"><Link href="/StartABusiness" className="link-style">Start a Business</Link></li>
               <li className="mb-2 text-sm"><Link href="/HumanResources" className="link-style">Human Resources</Link></li>
-              <li className="mb-2 text-sm"><Link href="/Marketing" className="link-style">Marketing</Link></li>
+              <li className="mb-2 text-sm"><Link href="/Marketing-solutions" className="link-style">Marketing</Link></li>
               <li className="mb-2 text-sm"><Link href="/Technology" className="link-style">Technology</Link></li>
               <li className="mb-2 text-sm"><Link href="/BusinessPlanning" className="link-style">Business Planning</Link></li>
             </ul>
@@ -56,8 +56,8 @@ const WideDiv = () => {
           <div className="mb-6 lg:pl-2">
             <h2 className="text-base font-semibold mb-7 font-serif text-[#ff8633]">Our Company</h2>
             <ul className="list-none p-0">
-              <li className="mb-2 text-sm"><Link href="/About Us" className="link-style">About Us</Link></li>
-              <li className="mb-2 text-sm"><Link href="/Careers" className="link-style">Careers</Link></li>
+              <li className="mb-2 text-sm"><Link href="/Contact-us/About-us" className="link-style">About Us</Link></li>
+              <li className="mb-2 text-sm"><Link href="/Contact-us/Careers" className="link-style">Careers</Link></li>
               <li className="mb-2 text-sm"><Link href="/Advertise" className="link-style">Advertise With Us</Link></li>
               <li className="mb-2 text-sm"><Link href="/EditorialProcess" className="link-style">Editorial Process</Link></li>
             </ul>
