@@ -18,10 +18,10 @@ const Dropdown = ({ activeDropdown, isMobile, setActiveDropdown, activeNavItem }
       id: 'technology',
       title: "Technology",
       items: [
-        { name: "Business Phone Systems", link: "/phone-systems" },
-        { name: "GPS Fleet Management Software", link: "/GpsFleetMangement" },
-        { name: "Best Employee Management Software", link: "/BestEmployeeMangementSoftware" },
-        { name: "Best Payroll System", link: "/BestPayrollSystem" }
+        { name: "Business Phone Systems", link: "/Technology-main/Business-phone-systems" },
+        { name: "GPS Fleet Management Software", link: "/Technology-main/Gps-fleet-management-software" },
+        { name: "Best Employee Management Software", link: "/Technology-main/Best-employee-management-software" },
+        { name: "Best Payroll System", link: "/Technology-main/Best-payroll-system" }
       ]
     },
     

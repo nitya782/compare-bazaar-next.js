@@ -308,10 +308,10 @@ const Navbar = () => {
                 <div className="mobile-dropdown-content">
                   <div className="mobile-dropdown-category">
                     <ul className="category-items">
-                      <li><a href="/phone-systems" className="category-item-link">Business Phone System</a></li>
-                      <li><a href="/GpsFleetMangement" className="category-item-link">GPS Fleet Management Software</a></li>
-                      <li><a href="/BestEmployeeMangementSoftware" className="category-item-link">Best Employee Management Software</a></li>
-                      <li><a href="/BestPayrollSystem" className="category-item-link">Best Payroll System</a></li>
+                      <li><a href="/Technology-main/Business-phone-systems" className="category-item-link">Business Phone System</a></li>
+                      <li><a href="/Technology-main/Gps-fleet-management-software" className="category-item-link">GPS Fleet Management Software</a></li>
+                      <li><a href="/Technology-main/Best-employee-management-software" className="category-item-link">Best Employee Management Software</a></li>
+                      <li><a href="/Technology-main/Best-payroll-system" className="category-item-link">Best Payroll System</a></li>
                     </ul>
                   </div>
                 </div>
