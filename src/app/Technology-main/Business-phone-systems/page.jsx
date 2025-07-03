@@ -54,8 +54,11 @@ const BusinessPhoneSystem = () => {
       widgetContainer.appendChild(iframe);
       
       setTimeout(() => {
-        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-        iframeDoc.open();
+  if (!iframe.contentWindow && !iframe.contentDocument) return;
+  const iframeDoc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+  if (!iframeDoc) return; // Extra safety
+
+  iframeDoc.open();
         iframeDoc.write(`
           <!DOCTYPE html>
           <html lang="en">

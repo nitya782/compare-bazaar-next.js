@@ -463,7 +463,6 @@ const CallCenterContent = () => {
   <br />
   
   These systems assist organizations in meeting service level agreements (SLAs), cutting down operational costs, and gaining valuable insights from customer interactions. Cloud-based solutions are especially popular as they offer scalability, support remote work, and provide regular feature updates without the need for expensive hardware installations.
-
       </div>
 
       {/* Features Grid */}

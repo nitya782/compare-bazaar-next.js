@@ -772,9 +772,11 @@ It's evolved from simple tracking to a complete management tool that works aroun
 
         {/* Features Content */}
         <div className="bg-white text-base rounded-2xl p-6 md:p-12">
-          {featureCategories[activeTab].features.map((feature, index) => (
-            renderFeature(feature, featureCategories[activeTab].color)
-          ))}
+{featureCategories[activeTab].features.map((feature, index) => (
+  <React.Fragment key={feature.title || index}>
+    {renderFeature(feature, featureCategories[activeTab].color)}
+  </React.Fragment>
+))}
         </div>
 
         {/* Interactive Feature Showcase */}

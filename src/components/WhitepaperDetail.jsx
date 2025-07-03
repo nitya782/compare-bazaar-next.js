@@ -147,24 +147,3 @@ const WhitepaperDetail = ({ paper, onBack }) => {
 };
 
 export default WhitepaperDetail;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

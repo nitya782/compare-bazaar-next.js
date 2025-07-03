@@ -91,7 +91,7 @@ const Technology = () => {
             "Reporting & analytics",
             "Integration with third-party tools (e.g., email, social media)"
           ],
-          "icon": Users,  
+          "icon": Users,
           "link": "Marketing/Best-crm-software"
         },
       ];
